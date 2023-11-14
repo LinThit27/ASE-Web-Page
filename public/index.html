@@ -12,7 +12,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
     <title>ASE Auto-workshop</title>
   </head>
   <body
@@ -20,11 +28,12 @@
   >
     <header>
       <div
-        class="fixed w-screen z-10 top-0 right-0 bg-gray-600 h-14 bg-opacity-60 flex items-center justify-between"
+        class="fixed w-screen z-10 top-0 right-0 h-14 flex items-center justify-between"
       >
         <a
           href="#"
-          class="text-orange-500 text-2xl md:text-4xl mb-1 font-extrabold cursor-pointer hover:scale-[1.03] tracking-tight"
+          class="text-orange-500 text-2xl md:text-4xl ml-1 mb-1 cursor-pointer hover:scale-[1.03] tracking-tight"
+          style="font-weight: 1000"
         >
           <span class="p-2 md:p-10">ASE</span>
         </a>
@@ -72,29 +81,36 @@
           class="min-h-[350px] w-screen p-10 pb-0 md:pb-10 grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-10 overflow-hidden"
         >
           <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
             class="mt-8 min-h-[280px] max-h-[280px] min-w-[95%] max-w-[95%] grid-cols-1"
           >
             <img
+              data-aos="fade-up"
+              data-aos-duration="1000"
               class="w-full h-full object-cover rounded-lg shadow-slate-800 shadow-md hover:scale-[1.03] transition-all duration-700"
               src="ase3.jpg"
             />
           </div>
 
           <div class="p-4 md:p-16 grid-cols-1">
-            <span class="text-white"
+            <span class="text-white" data-aos="fade-up" data-aos-duration="1000"
               >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Corporis repudiandae dolorum, aliquam rem aut doloremque nam
               voluptates earum cumque. Accusamus repellendus doloremque porro
-              vel eius labore reprehenderit magnam? Provident, quaerat.</span
-            >
+              vel eius labore reprehenderit magnam? Provident, quaerat.
+              <a href="#footer"> Contact Us </a>
+            </span>
           </div>
         </div>
 
         <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
           class="min-h-[350px] w-screen pt-0 pb-0 md:pt-10 md:pb-10 p-10 grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-10 overflow-hidden"
         >
           <div class="order-2 md:order-1 p-4 md:p-16 grid-cols-1">
-            <span class="text-white"
+            <span class="text-white" data-aos="fade-up" data-aos-duration="1000"
               >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Corporis repudiandae dolorum, aliquam rem aut doloremque nam
               voluptates earum cumque. Accusamus repellendus doloremque porro
@@ -102,11 +118,15 @@
             >
           </div>
           <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
             class="order-1 md:order-2 mt-8 min-h-[280px] max-h-[280px] min-w-[95%] max-w-[95%] grid-cols-1"
           >
             <img
+              data-aos="fade-up"
+              data-aos-duration="1000"
               class="w-full h-full object-cover rounded-lg shadow-slate-800 shadow-md hover:scale-[1.03] transition-all duration-700"
-              src="ase2.jpg"
+              src="ase4.jpg"
             />
           </div>
         </div>
@@ -115,16 +135,20 @@
           class="min-h-[350px] w-screen pt-0 pb-0 md:pt-10 md:pb-10 p-10 grid grid-cols-1 md:grid-cols-2 gap-1 md:gap-10 overflow-hidden"
         >
           <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
             class="mt-8 min-h-[280px] max-h-[280px] min-w-[95%] max-w-[95%] grid-cols-1"
           >
             <img
+              data-aos="fade-up"
+              data-aos-duration="1000"
               class="w-full h-full object-cover rounded-lg shadow-slate-800 shadow-md hover:scale-[1.03] transition-all duration-700"
-              src="ase1.jpg"
+              src="ase6.jpg"
             />
           </div>
 
           <div class="p-4 md:p-16 grid-cols-1">
-            <span class="text-white"
+            <span class="text-white" data-aos="fade-up" data-aos-duration="1000"
               >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Corporis repudiandae dolorum, aliquam rem aut doloremque nam
               voluptates earum cumque. Accusamus repellendus doloremque porro
@@ -134,9 +158,9 @@
         </div>
       </div>
     </main>
-    <footer>
+    <footer id="footer">
       <div
-        class="bg-gray-900 min-h-[230px] grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-10"
+        class="bg-gray-900 min-h-[230px] max-h-fit grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-10"
       >
         <div class="grid-cols-1 p-4 md:p-6 flex md:gap-2 flex-col max-h-full">
           <h2 class="text-white text-xl">Social Media:</h2>
@@ -264,6 +288,10 @@
           overlay.classList.add("hidden");
         }, 2000);
       }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
